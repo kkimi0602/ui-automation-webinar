@@ -4,11 +4,14 @@ const GLOBAL_TIMEOUT = 40e3;
 
 exports.config = {
     specs: ['specs/**/*.spec.js'],
-    capabilities: {
-        //browserName: 'edge'
+    /*capabilities: {
         browserName: 'chrome',
-        //browserName: 'geckodriver'
-    },
+    },*/
+    multiCapabilities:[{
+        browserName: 'chrome',
+    },{
+        browserName: 'firefox',
+    }],
     directConnect: true,
     mochaOpts: {
         reporter: 'spec'
