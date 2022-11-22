@@ -1,8 +1,6 @@
 'use strict';
 
 const { browser, element, by } = require("protractor");
-const CareerPage = require('../../pageObjects/careerPage');
-const careerPage = new CareerPage();
 
 class HomePage{
     constructor(){
